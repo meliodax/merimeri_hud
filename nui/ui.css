@@ -1,0 +1,370 @@
+html {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	background-color: transparent !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height:100vh;
+    width: 100%;
+}
+
+.hudbl {
+	position: fixed;
+    margin-top: 39.5vw;
+    margin-right: 0vw;
+	float: right;
+	bottom: 2%;
+	right: 1%;
+}
+
+* { 
+	box-sizing: border-box;
+    -webkit-font-smoothing: none;
+    user-select: none;
+    transition: all .2s;
+}
+
+i {
+	position: relative !important;
+	font-size: 18px;   
+	text-shadow: 0 2px rgba(0,0,0,0.8);
+	bottom: 22px;
+	display: flex;
+	flex-flow: row-reverse wrap;
+	flex-direction: column;
+/*	filter:drop-shadow(0 0 15px rgba(255, 0, 0, 0.637));*/
+}
+
+span {
+	position: relative;
+	font-family: "Lato", sans-serif;   
+	font-size:10px; 
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	display: inline-flex;
+	line-height: 1px;
+	flex-flow: row-reverse wrap;
+	flex-direction: column;
+	bottom: 20px;
+	right: 20px;
+}  
+
+
+::-webkit-scrollbar {
+	display: none;
+	overflow-y: hidden !important;
+	overflow-x: hidden !important;
+  }
+
+#imgserver {position:fixed;top: -3%;right: 0;left: 0;width: 210px;margin: 0 auto 0 auto;}
+#imgserver img {max-width: 85%;opacity: 0.8;}
+
+.hudDisplayText {
+	font-weight: 700;
+	font-size: 16px;
+	left: -60px;
+	bottom: 9.7px;
+
+	font-family: "Lato", sans-serif;   
+	color: rgba(255,255,255,0.7);
+	position: absolute !important;
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.8);
+	text-align: center;
+}
+
+.infosBack {
+	float: left;
+	right: 35px;
+	bottom: 87px;
+	text-align: right;
+	color: rgba(255,255,255,0.3);
+	position: fixed !important;
+	font-family: "Lato", sans-serif;   
+	font-size: 12px;
+	text-shadow: 1px 1px rgba(0,0,0,0.8);
+}
+
+.infosBack b {
+	color: rgba(255,255,255,0.5);
+	font-family: "Lato", sans-serif;   
+
+}
+
+#carDisplay {
+	right: 35px;
+	bottom: 105px;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: right;
+	color: rgba(255,255,255,0.6);
+	font-family: "Lato", sans-serif;   
+
+	position: absolute !important;
+	text-shadow: 1px 1px rgba(0,0,0,1);
+}
+
+#carDisplay b {
+	font-size: 11px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	padding-right: 5px;
+	color: rgba(255,255,255,0.3);
+	font-family: "Lato", sans-serif;   
+
+}
+
+#carDisplay s {
+	font-size: 11px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	padding-right: 5px;
+	color: rgba(192, 45, 136, 0.6);
+	text-decoration: none;
+	font-family: "Lato", sans-serif;   
+
+}
+
+.voiceBack { 
+    float:right;
+    position:absolute;
+	margin-left:-25px;   
+	line-height: normal;
+}
+
+#voice { 
+	position: fixed;
+	margin: 0 auto;
+	bottom: 38px;
+	right: 226px;
+}
+
+#health { 
+	position: fixed;
+	margin: 0 auto;
+	bottom: 38px;
+	right: 171px;
+}
+
+#armor { 
+	position: fixed;
+	margin: 0 auto;
+	bottom: 38px;
+	right: 129px;
+}
+
+
+#hunger { 
+	position: fixed;
+	margin: 0 auto;
+	bottom: 38px;
+	right: 78px;
+}
+
+#thirst { 
+	position: fixed;
+	margin: 0 auto;
+	bottom: 38px;
+	right: 30px;
+}
+
+.barra { 
+	position: fixed;
+	float: left;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+	right: 26px;
+	bottom: 18px;
+	width: 255px;
+	box-shadow: 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 2px 4px 0 rgba(192, 45, 136, 0.8);
+
+}
+
+.fundo {     
+	
+}
+
+
+.healthContainer>p {
+	line-height: 50%;
+}
+
+.smallerIcon {
+	padding-left: 0.2vw;
+}
+
+@media only screen and (max-width: 1366px) {
+
+	#voice { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 38px;
+		right: 235px;
+	}
+	
+	#health { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 38px;
+		right: 170px;
+	}
+	
+	#armor { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 38px;
+		right: 129px;
+	}
+	
+	
+	#hunger { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 38px;
+		right: 78px;
+	}
+	
+	#thirst { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 38px;
+		right: 30px;
+	}
+
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+	i {
+		position: relative !important;
+		font-size: 18px;   
+		text-shadow: 0 2px rgba(0,0,0,0.8);
+		bottom: 22px;
+		right: 3px;
+		display: flex;
+		flex-flow: row-reverse wrap;
+		flex-direction: column;
+	/*	filter:drop-shadow(0 0 15px rgba(255, 0, 0, 0.637));*/
+	}
+}
+
+@media only screen and (max-height: 1080px) {
+	.hudDisplayText { 
+		bottom: 6px;
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-height: 768px) {
+
+	.barra { 
+		right: 18px;
+	}
+	
+	.hudDisplayText {
+		font-size: 16px;
+		left: -60px;
+		bottom: 12px;
+	}
+
+	#armor { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 38px;
+		right: 122px;
+	}
+
+
+	
+	
+	#voice { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 37px;
+		right: 225px;
+	}
+}
+
+@media only screen and (max-height: 800px) {
+	.hudDisplayText {
+		left: -65px;
+		bottom: 12px;
+	}
+
+	#voice { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 37px;
+		right: 223px;
+	}
+	
+}
+
+@media only screen and (max-height: 600px) {
+	.barra { 
+			overflow-x: hidden !important;
+			overflow-y: hidden !important;
+			position: fixed;
+			float: left;
+			border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+			right: 20px;
+			bottom: 22px;
+			width: 255px;
+			box-shadow: 10px rgba(0,0,0,.4);
+			-webkit-box-shadow: 0 2px 4px 0 rgba(45, 158, 192, 0.8);
+	}
+	
+	.hudDisplayText {
+		font-weight: 700;
+		font-size: 16px;
+		left: -60px;
+		bottom: 12px;
+	
+		font-family: "Lato", sans-serif;   
+		color: rgba(255,255,255,0.7);
+		position: absolute !important;
+		text-shadow: 2px 1px rgba(0, 0, 0, 0.8);
+		text-align: center;
+	}
+	
+	
+	#voice { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 34px;
+		right: 214px;
+	}
+	
+	#health { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 34px;
+		right: 160px;
+	}
+	
+	#armor { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 34px;
+		right: 118px;
+	}
+	
+	
+	#hunger { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 34px;
+		right: 68px;
+	}
+	
+	#thirst { 
+		position: fixed;
+		margin: 0 auto;
+		bottom: 34px;
+		right: 21px;
+	}
+	}
